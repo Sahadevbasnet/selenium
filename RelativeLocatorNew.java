@@ -33,14 +33,14 @@ public class RelativeLocatorNew {
 		driver.findElement(By.id("login-button")).click();
 	
 //Right of
-//	By rightof = RelativeLocator.with(By.tagName("div")).toRightOf(By.partialLinkText("Backpack"));
+	By rightof = RelativeLocator.with(By.tagName("div")).toRightOf(By.partialLinkText("Backpack"));
 		
-//	driver.findElement(rightof).click();
+	driver.findElement(rightof).click();
 
 //left of
-//		By leftof = RelativeLocator.with(By.tagName("div")).toLeftOf(By.partialLinkText("Bike"));
+		By leftof = RelativeLocator.with(By.tagName("div")).toLeftOf(By.partialLinkText("Bike"));
 		
-//		driver.findElement(leftof).click();		
+		driver.findElement(leftof).click();		
 
 		
 		//near

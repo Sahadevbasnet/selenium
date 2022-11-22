@@ -9,15 +9,15 @@ public class Day5WebElementMethod {
 
 	public static void main(String[] args) throws InterruptedException {
 //		System.setProperty("webdriver.chrome.driver", "./lib/chromedriver");
-		// TODO Auto-generated method stub
+		
 		//System.setProperty("webDriver.Chrome.Driver", "/Users/sahadevbasnet/Desktop/selljar/chromedriver");
 		
 		WebDriver driver = new ChromeDriver();
 		
 		
-	//driver.get("http://automationpractice.com/index.php");
+	driver.get("http://automationpractice.com/index.php");
 		
-			
+		
 	
 //SendKeys and search by Specific item
 			
@@ -47,8 +47,8 @@ public class Day5WebElementMethod {
 
 
 //get text
-			//String gettext = driver.findElement(By.cssSelector("a[title=\"Contact Us\"]")).getText();
-			//System.out.println(gettext);
+			String gettext = driver.findElement(By.tagName("a")).getText();
+			System.out.println(gettext);
 			
 //get Tagname
 			//String Tagname = driver.findElement(By.cssSelector("[title=\"Contact Us\"]")).getTagName();
@@ -56,7 +56,7 @@ public class Day5WebElementMethod {
 
 
 		
-		driver.get("http://automationpractice.com/index.php?id_category=10&controller=category");		
+		//driver.get("http://automationpractice.com/index.php?id_category=10&controller=category");		
 	
 //	
 // isDisplayed()
@@ -70,21 +70,21 @@ public class Day5WebElementMethod {
 
 		
 // isSelected
-			driver.findElement(By.cssSelector("input[id=\"layered_id_attribute_group_1\"]")).click();
-			boolean select = driver.findElement(By.cssSelector("input[id=\"layered_id_attribute_group_1\"]")).isSelected();
-			System.out.println(select);
+//			driver.findElement(By.cssSelector("input[id=\"layered_id_attribute_group_1\"]")).click();
+//			boolean select = driver.findElement(By.cssSelector("input[id=\"layered_id_attribute_group_1\"]")).isSelected();
+//			System.out.println(select);
 
 			
 //getLocation
 			
 
-			System.out.println(driver.findElement(By.cssSelector("span[class=\"category-name\"]")).getLocation());
+//			System.out.println(driver.findElement(By.cssSelector("span[class=\"category-name\"]")).getLocation());
 			
 
 // getCssValue()
 
-			String getCss = driver.findElement(By.tagName("h1")).getCssValue("color");
-			System.out.println(getCss);
+//			String getCss = driver.findElement(By.tagName("h1")).getCssValue("color");
+//			System.out.println(getCss);
 			
 	}
 
